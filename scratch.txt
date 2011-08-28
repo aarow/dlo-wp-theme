@@ -1,0 +1,88 @@
+<h1 id="process_top">Design Lift-Off Process</h1>
+First of all, what exactly is a ‘process’? A <strong>Web development process</strong> is a documented outline of the steps needed to be taken from start to finish in order to complete a typical Web design project. It divides and categorizes the work and then breaks these high-level sections into tasks and resources that can be used as a road map for each project.
+<ol class="process_toc">
+	<li><a class="localLink" title="Process Step 1" href="#process_1">Planning</a></li>
+	<li><a class="localLink" title="Process Step 2" href="#process_2">Design</a></li>
+	<li><a class="localLink" title="Process Step 3" href="#process_3">Develop</a></li>
+	<li><a class="localLink" title="Process Step 4" href="#process_4">Launch</a></li>
+	<li><a class="localLink" title="Process Step 5" href="#process_5">Post-Launch</a></li>
+</ol>
+<h2 id="process_1">1. Planning</h2>
+The planning stage is arguably the most important, because what’s decided and mapped here sets the stage for the entire project. This is also the stage that requires client interaction and the accompanying attention to detail.
+<ul>
+	<li><strong>Requirements analysis</strong>
+This includes client goals, target audience, detailed feature requests and as much relevant information as you can possibly gather. Even if the client has carefully planned his or her website, don’t be afraid to offer useful suggestions from your experience.</li>
+	<li><strong>Project charter</strong>
+The project charter (or equivalent document) sums up the information that has been gathered and agreed upon in the previous point. These documents are typically concise and not overly technical, and they serve as a reference throughout the project.</li>
+	<li><strong>Site map</strong>
+A site map guides end users who are lost in the structure or need to find a piece of information quickly. Rather than simply listing pages, including links and a hierarchy of page organization is good practice.</li>
+	<li><strong>Contracts that define roles, copyright and financial points</strong>
+This is a crucial element of the documentation and should include payment terms, project closure clauses, termination clauses, copyright ownership and timelines. Be careful to cover yourself with this document, but be concise and efficient.</li>
+	<li><strong>Gain access to servers and build folder structure</strong>
+Typical information to obtain and validate includes FTP host, username and password; control panel log-in information; database configuration; and any languages or frameworks currently installed.</li>
+	<li><strong>Determine required software and resources (stock photography, fonts, etc.)</strong>
+Beyond determining any third-party media needs, identify where you may need to hire sub-contractors and any additional software you may personally require. Add all of these to the project’s budget, charging the client where necessary.</li>
+</ul>
+<a class="localLink" title="Back to Top" href="#top">Top</a>
+
+<h2 id="process_2">2. Design</h2>
+The design stage typically involves moving the information outlined in the planning stage further into reality. The main deliverables are a documented site structure and, more importantly, a visual representation. Upon completion of the design phase, the website should more or less have taken shape, but for the absence of the content and special features.
+<ul>
+	<li><strong>Wireframe and design elements planning</strong>
+This is where the visual layout of the website begins to take shape. Using information gathered from the client in the planning phase, begin designing the layout using a wireframe. Pencil and paper are surprisingly helpful during this phase, although many tools are online to aid as well.</li>
+	<li><strong>Mock-ups based on requirements analysis</strong>
+Designing mock-ups in Photoshop allows for relatively easy modification, it keeps the design elements organized in layers, and it primes you for slicing and coding when the time later on.</li>
+	<li><strong>Review and approval cycle</strong>
+A cycle of reviewing, tweaking and approving the mock-ups often takes place until (ideally) both client and contractor are satisfied with the design. This is the easiest time to make changes, not after the design has been coded.</li>
+	<li><strong>Slice and code valid XHTML/CSS</strong>
+It’s coding time. Slice the final Photoshop mock-up, and write the HTML and CSS code for the basic design. Interactive elements and jQuery come later: for now, just get the visuals together on screen, and be sure to validate all of the code before moving on.</li>
+</ul>
+<div>
+
+<a class="localLink" title="Back to Top" href="#top">Top</a>
+
+</div>
+<h2 id="process_3">3. Development</h2>
+Development involves the bulk of the programming work, as well as loading content (whether by your team or the client’s). Keep code organized and commented, and refer constantly to the planning details as the full website takes shape. Take a strategic approach, and avoid future hassles by constantly testing as you go.
+<ul>
+	<li><strong>Build development framework.</strong>
+This is when unique requirements might force you to diverge from the process. If you’re using Ruby on Rails, an ASP/PHP framework or a content management system, now is the time to implement it and get the basic engine up and running. Doing this early ensures that the server can handle the installation and set-up smoothly.</li>
+	<li><strong>Code templates for each page type.</strong>
+A website usually has several pages (e.g. home, general content, blog post, form) that can be based on templates. Creating your own templates for this purpose is good practice.</li>
+	<li><strong>Develop and test special features and interactivity.</strong>
+Here’s where the fancy elements come into play. I like to take care of this before adding the static content because the website now provides a relatively clean and uncluttered workspace. Some developers like to get forms and validation up and running at this stage as well.</li>
+	<li><strong>Fill with content.</strong>
+Time for the boring part: loading all of the content provided by the client or writer. Although mundane, don’t misstep here, because even the simplest of pages demand tight typography and careful attention to detail.</li>
+	<li><strong>Test and verify links and functionality.</strong>
+This is a good time for a full website review. Using your file manager as a guide, walk through every single page you’ve created—everything from the home page to the submission confirmation page—and make sure everything is in working order and that you haven’t missed anything visually or functionally.</li>
+</ul>
+
+<a class="localLink" title="Back to Top" href="#top">Top</a>
+
+<h2 id="process_4">4. Launch</h2>
+The purpose of the launch phase is to prepare the website for public viewing. This requires final polishing of design elements, deep testing of interactivity and features and, most of all, a consideration of the user experience. An important early step in this phase is to move the website, if need be, to its permanent Web server. Testing in the production environment is important because different servers can have different features and unexpected behavior (e.g. different database host addresses).
+<ul>
+	<li><strong>Polishing</strong>
+Particularly if you’re not scrambling to meet the deadline, polishing a basically completed design can make a big difference. Here, you can identify parts of the website that could be improved in small ways. After all, you want to be as proud of this website as the client is.</li>
+	<li><strong>Transfer to live server</strong>
+This could mean transferring to a live Web server (although hopefully you’ve been testing in the production environment), “unhiding” the website or removing the “Under construction” page. Your last-minute review of the live website happens now. Be sure the client knows about this stage, and be sensitive to timing if the website is already popular.</li>
+	<li><strong>Testing</strong>
+Run the website through the final diagnostics using the available tools: code validators, broken-link checkers, website health checks, spell-checker and the like. You want to find any mistakes yourself rather than hearing complaints from the client or an end-user.</li>
+	<li><strong>Final cross-browser check (IE, Firefox, Chrome, Safari, Opera, iPhone, BlackBerry)</strong>
+Don’t forget to check the website in multiple browsers one last time. Just because code is valid, doesn’t mean it will sparkle with a crisp layout in IE 6.</li>
+</ul>
+
+<a class="localLink" title="Back to Top" href="#top">Top</a>
+
+<h2 id="process_5">5. Post-Launch</h2>
+Business re-enters the picture at this point as you take care of all the little tasks related to closing the project. Packaging source files, providing instructions for use and any required training occurs at this time. Always leave the client as succinctly informed as possible, and try to predict any questions they may have. Don’t leave the project with a closed door; communicate that you’re available for future maintenance and are committed to ongoing support. If maintenance charges haven’t already been shared, establish them now.
+<ul>
+	<li><strong>Hand off to client</strong>
+Be sure the client is satisfied with the product and that all contractual obligations have been met (refer to the project charter). A closed project should leave both you and the client satisfied, with no burned bridges.</li>
+	<li><strong>Provide documentation and source files</strong>
+Provide documentation for the website, such as a soft-copy site map and details on the framework and languages used. This will prevent any surprises for the client later on, and it will also be useful should they ever work with another Web developer.</li>
+	<li><strong>Project close, final documentation</strong>
+Get the client to sign off on the last checks, provide your contact information for support, and officially close the project. Maintain a relationship with the client, though; checking in a month down the road to make sure everything is going smoothly is often appreciated.</li>
+</ul>
+
+<a class="localLink" title="Back to Top" href="#top">Top</a>
