@@ -61,7 +61,7 @@ Tags: starkers, naked, clean, basic
 			nav {
 				float:left;
 				width:100%;
-				position: relative;
+				position: fixed;
 			}
 			
 			
