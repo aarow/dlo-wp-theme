@@ -49,9 +49,9 @@ endif;
  * @since Starkers HTML5 3.0
  */
 function starkers_menu() {
-	echo '<nav><ul>';//<li><a href="'.get_bloginfo('url').'">Home</a></li>';
+	echo '<nav class="nav_main"><ul>';//<li><a href="'.get_bloginfo('url').'">Home</a></li>';
 	wp_list_pages('title_li=');
-	echo '<li><a href="#footer_contact" title="Contact" class="localLink">Contact</a></li></ul></nav>';
+	echo '</ul></nav>';
 }
 
 /**

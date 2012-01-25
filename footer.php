@@ -13,33 +13,7 @@
 <?php
 	get_sidebar( 'footer' );
 ?>
-		<div id="footer_nav">
-			<ul>
-				<?php 
-					wp_list_pages('title_li=');
-				?>
-			</ul>
-		</div>
-		<div id="footer_contact">
-			<h4>Contact</h4>
-			<p>Send me a message or get in touch through other avenues.</p>
-			<p><a class="iframe button round-rectangle" href="http://form.jotform.com/form/12073617758">
-				<img src="<?php echo get_bloginfo('template_directory');?>/images/icn_message.png" alt="" />
-				<em>Send Message</em>
-			</a>
-			</p>
-			<ul>
-				<li><a href="#" class="button round-rectangle" title="Twitter" id="twitter">Twitter</a></li>
-				<li><a href="#" class="button round-rectangle" title="Facebook" id="facebook">Facebook</a></li>
-				<li><a href="#" class="button round-rectangle"  title="LinkedIn" id="linkedin">LinkedIn</a></li>
-			</ul>
-			
-			<!--
-			<p><a href="mailto:aaron@designliftoff.com">aaron@designliftoff.com</a></p>
-			-->
-		</div>
 
-		<!--
 		<div id="footer_form" class="contact_form">
 			<form action="">
 				<ul>
@@ -51,22 +25,32 @@
 					</li>
 				</ul>
 			</form>
+		</div>		
+		<div id="footer_contact">
+			<ul>
+				<li><a href="https://twitter.com/#!/mrmustarde" class="button round-rectangle btn_footer" title="Twitter" id="twitter"><img src="<?php echo get_bloginfo('template_directory');?>/images/icn_twitter.png" alt="" /><span>Twitter</span></a></li>
+				<li><a href="http://www.facebook.com/profile.php?id=100001090854741" class="button round-rectangle btn_footer" title="Facebook" id="facebook"><img src="<?php echo get_bloginfo('template_directory');?>/images/icn_facebook.png" alt="" /><span>Facebook</span></a></li>
+				<li><a href="http://www.linkedin.com/in/aneville" class="button round-rectangle btn_footer"  title="LinkedIn" id="linkedin"><img src="<?php echo get_bloginfo('template_directory');?>/images/icn_linkedin.png" alt="" /><span>LinkedIn</span></a></li>
+			</ul>
 		</div>
-		-->
 		
-		<!--
-		<div id="footer_form" class="contact_form">
-			<a class="iframe button round-rectangle" href="http://form.jotform.com/form/12073617758">
-				<img src="<?php echo get_bloginfo('template_directory');?>/images/icn_message.png" alt="" />
-				<p>Send Message</p>
-			</a>
-		</div>
-		-->
 		
-		<div id="back_to_top_nav">
-			<a href="#top" title="Back to Top" class="localLink btn_launch" id="btn_back_to_top">
-				<span>Back to Top</span>
-			</a>
+		<div class="footer_bottom">
+			<div id="back_to_top_nav">
+				<a href="#top" title="Back to Top" class="localLink btn_launch" id="btn_back_to_top">
+					<span>Back to Top</span>
+				</a>
+			</div>
+			<div class="copyright">
+				<span>&#169; 2012 Design Lift-Off</span>
+			</div>
+			<div id="footer_nav">
+				<ul>
+					<?php 
+						wp_list_pages('title_li=');
+					?>
+				</ul>
+			</div>
 		</div>
 	</footer>
 
@@ -79,6 +63,8 @@
 	wp_footer();
 ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		var faders = $('body.js').children('#top, #body_wrapper, #footer_main');
@@ -88,17 +74,6 @@
 			$(faders[i++]).fadeIn(500, arguments.callee);
 		};
 		fadeInEverything();
-		
-		$("a.iframe").fancybox({
-			'width'				: 500,
-			'height'			: 400,
-			'transitionOut'		: 'fade',
-			'type'				: 'iframe',
-			'padding'			: 0,
-			'scrolling'			: 'no',
-			'centerOnScroll'	: true,
-			'overlayShow'		: false
-		});
 	});
 	
 	$("a.localLink").click(function(event){

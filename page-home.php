@@ -18,36 +18,36 @@ get_header(); ?>
 <section id="body_wrapper">
 
 <section id="welcome">
-	<h2>We build rockets... er rather websites</h2>
-	<script type="text/javascript">
-		$('#welcome h2').fitText(0.899);
-	</script>
-	<img src="<?php echo get_bloginfo('template_directory');?>/images/fig_welcome.png" alt="" />
-	<p><em>Design Lift-Off</em> is just a fancy store front for my design services. My name is <em>Aaron Neville</em> and I produce web sites and graphics. Yah, I know that the rocket analogy is a little corny, but all business analogies are. Besides, rockets are cool.</p>
+	<h2>We build rockets...<br /> er rather websites</h2>
+	<p><em>Design Lift-Off</em> is just a fancy store front for my design services. My name is <em>Aaron Neville</em> and I design web sites and graphics—and I love it. Yah, I know that the rocket analogy is a little corny, but all business analogies are. Besides, rockets are cool.</p>
 	<a href="#process" title="Process" class="localLink btn_launch" id="btn_process">
-		<em>Launch</em>
-		<em>Sequence</em>
-		<span>See Our Process</span>
+		<em>Launch Sequence</em>
+		<span>See The Process</span>
 	</a>
 </section><!-- end welcome -->
 
 <section id="work" class="section_box">
 	<div class="section_header">
-		<h2>Work</h2>
-		<p>Striving to build quality designs</p>
+		<h2>Previous Work</h2>
 	</div>
 	
 	<div class="section_body">
-		<p><img src="<?php echo get_bloginfo('template_directory');?>/images/fig_sample.png" alt="" class="figure" /></p>
+		<p>
+			<!-- link to work -->
+			<a href="index.php?page_id=20" title="Previous Work">
+				<img src="<?php echo get_bloginfo('template_directory');?>/images/fig_sample.png" alt="Previous Work" class="figure" />
+			</a>
+		</p>
 	</div>
 </section><!-- end work -->
 
 <section id="process" class="section_box">
 	<div class="section_header">
-		<h2>Process</h2>
-		<p>Standard outline for the web design process</p>
+		<h2>The Process</h2>
+		<p>A standard outline for the web design process</p>
 	</div>
 	<div class="section_body">
+		<a href="index.php?page_id=83" class="process_link" title="The Process">
 		<ul>
 			<li class="process_step">
 				<img src="<?php echo get_bloginfo('template_directory');?>/images/fig_process-1.png" alt="" class="figure" />
@@ -70,6 +70,7 @@ get_header(); ?>
 				<p>Focus upon the finer details in the revision process. Ensure that site is live. Further testing and final checks. Present to client and assist with promotion as required.</p>
 			</li>
 		</ul>
+		</a>
 	</div>
 	
 </section><!-- end process -->

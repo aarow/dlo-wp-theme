@@ -27,20 +27,19 @@
 
    if ( $paged >= 2 || $page >= 2 )
        echo ' | ' . sprintf( __( 'Page %s', 'starkers' ), max( $paged, $page ) );
-
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
+
+<!--<link href='http://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Wire One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+-->
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" charset="utf-8" src="<?php echo get_bloginfo('template_directory')?>/js/jquery.fittext.js"></script>
 
-<script type="text/javascript" src="<?php echo get_bloginfo('template_directory')?>/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory')?>/js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+
 <!--[if lt IE 9]>
 <script type="text/javascript" charset="utf-8" src="<?php echo get_bloginfo('template_directory')?>/js/modernizr.js"></script>
 <![endif]-->
@@ -75,7 +74,6 @@
 	var browserHeight = $(window).height();
 	$('body').height(browserHeight + 100);
 	$('body').addClass('js');
-	
 </script>
 <?php
 	}
