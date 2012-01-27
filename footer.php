@@ -63,8 +63,6 @@
 	wp_footer();
 ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-
 <script type="text/javascript">
 	$(document).ready(function() {
 		var faders = $('body.js').children('#top, #body_wrapper, #footer_main');
